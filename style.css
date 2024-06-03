@@ -555,7 +555,7 @@ footer  */
 
 /* #### Desktop View #### */
 
-@media screen and (min-width : 991px) and (max-width:1440px) {
+@media screen and (min-width : 991px){
     .content-container {
         margin: 0;
     }
@@ -809,7 +809,9 @@ footer  */
 
     .did-you-know-cards {
         margin-right: 12%;
-        padding: 0;
+        width:50%;
+        max-width:550px;
+/*         padding: 0; */
     }
 
     .did-you-know-box-name {
