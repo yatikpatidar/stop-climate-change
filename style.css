@@ -10,6 +10,13 @@
 
 }
 
+.body {
+    font-family: 'komet';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
 @font-face {
     font-family: "flood-std";
     src: url('./assets/fonts/Flood\ Std\ Regular.otf');
@@ -31,7 +38,7 @@
 
 .org-name {
     color: var(--custom-blue-color);
-    font-family: sans-serif;
+    font-family: 'sans-serif';
     font-size: 20px;
     grid-column: 1;
     grid-row: 1;
@@ -188,7 +195,7 @@ What we do  */
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'sans-serif';
+    /* font-family: 'sans-serif'; */
     padding: 0 5%;
 }
 
@@ -231,7 +238,7 @@ What we do  */
 
 .card-heading {
     font-size: 20px;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 10px;
 }
 
 .what-we-do-card p {
@@ -253,7 +260,7 @@ Did you know  */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left 60%;
-    font-family: 'sans-serif';
+    font-family: 'poynter-oldstyle-display';
     padding: 5%;
 }
 
@@ -435,7 +442,7 @@ stories section */
 .subscribe-section {
     background-color: var(--custom-light-green-button-bgcolor);
     color: var(--custom-blue-color);
-    font-family: 'sans-serif';
+    font-family: 'poynter-oldstyle-display';
     padding: 25px 5%;
 }
 
@@ -525,7 +532,7 @@ footer  */
     line-height: 26px;
 }
 
-.list-view-links{
+.list-view-links {
     text-decoration: none;
     color: var(--custom-blue-color);
 }
@@ -586,10 +593,11 @@ footer  */
     .org-name {
         display: flex;
         width: 178px;
-        font-size: 21px;
+        font-size: 20px;
         margin: 0;
         padding: 0;
         line-height: 29px;
+        font-family: 'poynter-oldstyle-display';
     }
 
     .logo {
@@ -605,6 +613,12 @@ footer  */
         padding-bottom: 13px;
         border-radius: 30px;
         font-size: 16px;
+    }
+
+    .button-design:hover {
+        background-color: var(--custom-blue-color);
+        opacity: 1;
+        color: var(--custom-light-green-button-bgcolor);
     }
 
     /* section 2
@@ -623,7 +637,6 @@ footer  */
         flex-direction: row-reverse;
         padding-top: 128px;
         padding-bottom: 128px;
-        padding: 128px auto;
         width: 100%;
         margin: 0 0 0 -4%;
     }
@@ -635,9 +648,8 @@ footer  */
         margin-top: 30px;
         font-size: 72px;
         line-height: 76px;
-        padding: 41px 0 0 90px;
-        font-size: 72px;
-        line-height: 76px;
+        padding: 0 0 0 12%;
+
     }
 
     .issue-article {
@@ -645,9 +657,9 @@ footer  */
         flex-direction: column;
         align-items: start;
         position: relative;
-        font-family: "sans-serif";
+        font-family: 'poynter-oldstyle-display';
         width: 50%;
-        padding-left: 0px;
+        padding: 0px;
     }
 
     .box-name {
@@ -666,13 +678,14 @@ footer  */
         background-color: white;
         text-align: start;
         height: inherit;
+        padding: 76px 62px 119px;
     }
 
     .article-detail {
         color: var(--custom-blue-color);
-        font-family: 'sans-serif';
-        line-height: 45px;
-        font-size: 34px;
+        font-family: 'poynter-oldstyle-display';
+        line-height: 51px;
+        font-size: 38px;
         font-weight: 600;
         padding: 0;
         margin-bottom: 25px;
@@ -694,7 +707,7 @@ footer  */
         flex-direction: row;
         width: 100%;
         margin: 0 auto;
-        padding: 7% 12%;
+        padding: 6% 12%;
     }
 
     .action-card {
@@ -707,6 +720,7 @@ footer  */
         font-size: 24px;
         margin-bottom: 13px;
         color: var(--custom-blue-color);
+        font-family: poynter-oldstyle-display;
     }
 
     .action-detail {
@@ -717,7 +731,7 @@ footer  */
 
     .what-we-do-article {
         background-color: #354463;
-        padding: 88px 0 120px 0;
+        padding: 88px 0 160px 0;
     }
 
     .what-we-do-container {
@@ -733,18 +747,18 @@ footer  */
     }
 
     .what-we-do-para {
-        margin: 0;
         text-align: left;
-        font-size: 32px;
+        font-size: 33px;
         line-height: 51px;
-        padding: 80px 18px;
+        font-family: poynter-oldstyle-display;
+        padding-left: 20px;
     }
 
     .what-we-do-cards {
         display: flex;
         justify-content: space-between;
         padding: 19px;
-        padding-right: 102px;
+        padding-right: 40px;
         margin: 0;
     }
 
@@ -766,6 +780,7 @@ footer  */
 
     .what-we-do-card p {
         text-align: left;
+        padding-left: 10px;
     }
 
     .what-we-do-read-more-button {
@@ -777,6 +792,8 @@ footer  */
         justify-content: left;
         float: inline-start;
         margin-right: auto;
+        margin-left: 10px;
+
     }
 
     /* 
@@ -784,12 +801,12 @@ footer  */
 
     .did-you-know-article {
         display: flex;
-        padding: 130px 0;
+        padding: 90px 0 130px 0;
     }
 
     .did-you-know-left-container {
         width: 50%;
-        max-width: 550px;
+        /* max-width: 550px; */
         margin-left: 11%;
     }
 
@@ -799,7 +816,7 @@ footer  */
         width: 1;
         width: 397px;
         max-width: 100%;
-        margin-top: 51px;
+        margin-top: 13%;
     }
 
     .take-action-today-button {
@@ -809,7 +826,7 @@ footer  */
 
     .did-you-know-cards {
         width: 50%;
-        
+
         margin-right: 12%;
         padding: 0;
     }
@@ -826,6 +843,7 @@ footer  */
 
     .did-you-know-heading {
         font-size: 32px;
+        font-family: 'poynter-oldstyle-display';
     }
 
     .did-you-know-card-detail {
@@ -858,7 +876,7 @@ footer  */
 
     .story-image {
         height: 97%;
-        width: 93%;
+        width: 92%;
         position: relative;
         right: 0;
         top: 0;
@@ -871,20 +889,23 @@ footer  */
         margin: 49px 28px 20px 17px;
         width: 50%;
         position: absolute;
-        height: 35%;
+        height: 44%;
         width: 49%;
         left: 0;
-        top: 23%;
-        padding: 30px 64px 60px;
+        top: 20%;
+        padding: 54px 64px 60px;
+        font-family: 'poynter-oldstyle-display';
     }
 
     .story-message {
         text-align: left;
+        font-size: 28px;
+        line-height: 36px
     }
 
     .story-message-by {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 17px;
+        line-height: 23px;
         text-align: left;
         margin-left: 10px;
     }
@@ -894,7 +915,8 @@ footer  */
         bottom: 17%;
         left: 17px;
         margin: 0;
-        padding: 16px;
+        padding: 19px;
+        font-size: 19px;
     }
 
     /* 
@@ -906,7 +928,7 @@ footer  */
 
     .event-article {
         width: 100%;
-        padding: 11% 11%;
+        padding: 9% 11% 4% 11%;
     }
 
     .event-tag-line {
@@ -924,23 +946,28 @@ footer  */
         margin: 20px 0;
         padding: 20px;
         text-align: left;
-        column-gap: 50px;
-        row-gap: 4%;
-        width: 96%;
+        column-gap: 8%;
+        row-gap: 3%;
+        width: 93%;
         margin-bottom: 6%;
-        height: 41rem;
+        height: 39rem;
     }
 
+    .event-card-heading-box {
+        margin-top: 2%;
+    }
 
     .event-card-box-name {
-        padding-top: 25px;
         grid-column: 2;
         grid-row: 1;
         background-color: white;
         color: var(--custom-blue-color);
         position: relative;
         left: 0;
-        top: 16px;
+        top: 14px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 17px 31px;
     }
 
     .event-card-image {
@@ -953,17 +980,18 @@ footer  */
 
     .event-card-heading {
         grid-column: 2;
-        margin: 0;
-        font-size: 44px;
-        font-size: 38px;
-        line-height: 44px;
+        margin-bottom: -7%;
+        font-size: 41px;
+        line-height: 51px;
+        font-family: 'poynter-oldstyle-display';
     }
 
     .event-card-detail {
-        grid-column: 2;
-        margin: 0;
-        font-size: 19px;
+        margin-top: 0%;
+        font-size: 22px;
         line-height: 30px;
+        font-family: 'poynter-oldstyle-display';
+        margin-bottom: -2%;
     }
 
     .event-card-read-more-button {
@@ -975,13 +1003,17 @@ footer  */
         height: 48px;
     }
 
-
+    #latest-news-card {
+        margin-bottom: 0;
+    }
+    
     #news-heading-box {
         grid-column: 1
     }
-
+    
     #news-img {
         grid-column: 2;
+        margin-bottom: 0;
         grid-row: 1 /span 4;
     }
 
@@ -1022,6 +1054,7 @@ footer  */
         width: 50%;
         margin: 20px;
         padding: 22px;
+        padding-right: 0;
     }
 
     .email-input {
@@ -1038,8 +1071,7 @@ footer  */
         width: 100%;
         margin: auto;
         display: flex;
-        justify-content: space-between;
-        gap: 70PX;
+        justify-content: space-evenly;
         padding: 130px 12%;
     }
 
@@ -1069,7 +1101,7 @@ footer  */
     .contact-us-tag-line {
         width: 21%;
         padding: 0px 0 0 0;
-        font-size: 50px;
+        font-size: 44px;
         line-height: 57px;
         margin: 0;
     }
